@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela Exemplo</title>
+  <style>
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #000000;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      text-transform: uppercase;
+    }
+
+    caption {
+        font-weight: bolder;
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    col.cnome {
+        background-color: beige;
+    }
+
+    col.cgrupo {
+        background-color: lightsalmon;
+    }
+
+    .blue {
+        background-color: lightskyblue;
+    }
+
+    div#container {
+        overflow-x: auto;
+    }
+
+    /* Overflow serve para tornar algumas tabelas grandes mais dinamicas, melhgorar a visibilidade principalmente em celular, ele trava o site e deixa a rolagem apenas na tabela */
+
+  </style>
+</head>
+<body>
+
+  <div id="container">
+      <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="blue">
+            <!---Jeitos diferentes de destracar as colunas-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lucas Silva</td>
+            <td>Masculino</td>
+            <td>29</td>
+            <td>Engenheiro</td>
+          </tr>
+          <tr>
+            <td>Mariana Souza</td>
+            <td>Feminino</td>
+            <td>34</td>
+            <td>Designer</td>
+          </tr>
+          <tr>
+            <td>Roberto Lima</td>
+            <td>Masculino</td>
+            <td>41</td>
+            <td>Médico</td>
+          </tr>
+          <tr>
+            <td>Fernanda Alves</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Desenvolvedora</td>
+          </tr>
+          <tr>
+            <td>João Pedro</td>
+            <td>Masculino</td>
+            <td>38</td>
+            <td>Professor</td>
+          </tr>
+          <tr>
+            <td>Ana Beatriz</td>
+            <td>Feminino</td>
+            <td>31</td>
+            <td>Arquiteta</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+</body>
+</html>
