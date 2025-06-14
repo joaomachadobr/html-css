@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="imas" value="M" checked>
+            <label for="imas">Masculino</label>
+            <br>
+            <input type="radio" name="Sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label>
+
+            <!-- importante deixar o mesmo nome nos dois para quando marcar um ele desmarcar automaticamente o outro -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label><br>
+
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label><br>
+
+            <input type="checkbox" name="esvol" id="iesvol">
+            <label for="iesvol">Volei</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
