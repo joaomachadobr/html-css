@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* todas as demais midias */
+
+/* Typical Device Breakpoints
+--------------------------
+Mobile (Extra Small):
+Typically ranges from 0px to 576px. This covers most smartphones in both portrait and landscape orientations.
+
+Tablet (Small):
+Generally between 576px and 768px. This includes tablets in both portrait and landscape modes.
+
+Desktop (Medium):
+Starts at 768px and can extend up to 992px or 1200px depending on the specific design.
+
+Large Desktop (Large):
+This breakpoint usually starts at 992px or 1200px and extends to larger screen sizes, like 1400px and above. */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../images/back-print.jpg);
+        background-size: cover;
+        
+        /* No curso (em 2020) falava que nao imprimia fundo mas agora parece que ta funcionando normalmente */
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressao foi feita atraves do site: _____';
+        text-decoration: overline;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}    
+}
