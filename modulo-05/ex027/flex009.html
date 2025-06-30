@@ -9,30 +9,23 @@
             background-color: brown;
 
             display: flex;
-            flex-flow: row wrap;
-            height: 400px;
-
-            align-content : space-between;
-            /* align-content: se usa quando estiver usando wrap; */
-
-            /* justify-content: main-axis;
-            align-items: cross-axis;
-            align-content: cross-axis quando elementos empacotados; */
-
+            flex-flow: row nowrap;
+            align-content: space-around;
         }
 
         div.item {
             background-color: aqua;
             border: 2px solid black;
-            text-align: center;
-            padding: 40px;
+
+            /* flex-basis: auto; */
+            flex-basis: 150px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item">Agora vai ser um texto grande para testar essse negocio de flex basis</div>
+        <div class="item">Bem pouco espaco</div>
         <div class="item">C</div>
         <div class="item">D</div>
         <div class="item">E</div>
