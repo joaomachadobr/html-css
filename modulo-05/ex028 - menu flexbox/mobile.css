@@ -18,7 +18,9 @@ header > nav > a {
     width: 90vw;
 }
 
-header > nav {
+/* menu hamburguer */
+
+/* header > nav {
     display: none;
 }
 
@@ -37,4 +39,4 @@ header > nav {
     color: black;
     transition: background-color .5s;
     cursor: pointer;
-}
+} */
