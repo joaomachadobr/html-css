@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* body {
+    background-color: aqua;
+} */
+
+header, header > nav {
+    flex-flow: column nowrap;
+    align-content: center;
+    gap: 10px;
+}
+
+header > h1 {
+    flex-basis: 40px;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+header > nav {
+    display: none;
+}
+
+#burguer {
+    display: block;
+    width: 90vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+    cursor: pointer;
+}
