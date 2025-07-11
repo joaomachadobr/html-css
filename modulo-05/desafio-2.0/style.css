@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.container {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 80px 40px 1fr 40px;
+    gap: 5px;
+
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#topo {
+    background-color: lightseagreen;
+    grid-area: 1/1/2/-1
+}
+
+div#menu {  
+    background-color: lightcoral;
+    grid-area: 2/1/3/-1
+
+}
+
+div#principal {
+    background-color: lightgoldenrodyellow;
+    grid-area: 3/1/4/-2
+}
+
+div#secundario {
+    background-color: lightsalmon;
+    grid-area: 3/-2/4/-1
+
+}
+
+div#rodape {
+    background-color: gray;
+    grid-area: -1/1/-2/-1
+
+}
